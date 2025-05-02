@@ -69,7 +69,6 @@ CREATE USER 'analista_bi'@'localhost' IDENTIFIED BY 'user1234';
 CREATE USER 'sistema'@'localhost' IDENTIFIED BY 'user2345';
 
 -- Libere os acesso para realizar somente o SELECT nas tabelas cursos e alunos
--- libere os acessos para que o usuario sistema realizei SELECT, UPDATE, DELETE
 
 GRANT SELECT ON db_escola. * TO 'analista_bi'@'localhost';
 GRANT SELECT, UPDATE, DELETE ON db_escola. * TO 'sistema'@'localhost';
